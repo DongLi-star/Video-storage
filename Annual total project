@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Project Storage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Video Project Storage</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Upload</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Store, Manage, and Share Your Video Projects</h2>
+        <p>A convenient platform for organizing your video projects.</p>
+    </section>
+
+    <section class="projects">
+        <h2>Recent Projects</h2>
+        <div class="project-list">
+            <div class="project-card">
+                <img src="thumbnail1.jpg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>Description of the first project.</p>
+            </div>
+            <div class="project-card">
+                <img src="thumbnail2.jpg" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>Description of the second project.</p>
+            </div>
+            <!-- Add more project cards here -->
+        </div>
+    </section>
+
+    <section class="upload">
+        <h2>Upload a New Video Project</h2>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="project-title">Project Title:</label>
+            <input type="text" id="project-title" name="project-title" required>
+
+            <label for="project-description">Project Description:</label>
+            <textarea id="project-description" name="project-description" required></textarea>
+
+            <label for="project-video">Upload Video:</label>
+            <input type="file" id="project-video" name="project-video" accept="video/*" required>
+
+            <button type="submit">Upload Project</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Video Project Storage. All rights reserved.</p>
+    </footer>
+</body>
+</html>
